@@ -17,6 +17,7 @@ library:
   source-dirs: src
   exposed-modules:
     - Data.Text.KGrams
+    - Data.Text.ToFromText
 
 tests:
   spec:

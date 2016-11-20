@@ -24,6 +24,7 @@ library
     , text
   exposed-modules:
       Data.Text.KGrams
+      Data.Text.ToFromText
   other-modules:
       Paths_text_utils
   default-language: Haskell2010
@@ -41,5 +42,7 @@ test-suite spec
     , HTF
   other-modules:
       Data.Text.KGramsTest
+      Data.Text.ToFromTextTest
       Data.Text.KGrams
+      Data.Text.ToFromText
   default-language: Haskell2010

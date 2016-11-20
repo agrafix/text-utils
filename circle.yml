@@ -1,0 +1,15 @@
+dependencies:
+  cache_directories:
+    - "~/.stack"
+  pre:
+    - wget https://github.com/commercialhaskell/stack/releases/download/v1.2.0/stack-1.2.0-linux-x86_64.tar.gz -O /tmp/stack.tar.gz
+    - tar -C /tmp -xvf /tmp/stack.tar.gz && chmod +x /tmp/stack-1.2.0-linux-x86_64/stack
+    - sudo mv /tmp/stack-1.2.0-linux-x86_64/stack /usr/bin/stack
+  override:
+    - stack setup
+    - stack install cpphs
+    - stack build --fast --pedantic --only-dependencies
+
+test:
+  override:
+    - stack test --fast --pedantic

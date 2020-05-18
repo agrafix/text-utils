@@ -1,12 +1,12 @@
 name:                text-utils
-version:             0.1.0.0
+version:             0.1.1.0
 synopsis:            Various text utilities
 description:         Please see README.md
 homepage:            https://github.com/agrafix/text-utils#readme
 license:             MIT
 author:              Alexander Thiemann
 maintainer:          mail@athiemann.net
-copyright:           2016 Alexander Thiemann <mail@athiemann.net>
+copyright:           2016-2020 Alexander Thiemann <mail@athiemann.net>
 category:            Web
 extra-source-files:
   - README.md
